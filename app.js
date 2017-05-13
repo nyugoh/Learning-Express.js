@@ -12,9 +12,10 @@ app.set('port', process.env.PORT || 8000);
 //Set the render/ View engine --ejs
 app.set('view engine', 'ejs');
 
-//Set the router for static files
+//Set the router for static files --css,js, images and fonts
 app.use('/public', express.static('./public'));
 
+//Shows a log statement in the termninal about each rrequest
 app.get('/', function (req, res, next){
     console.log("Incoming request ::");
     console.log("URL    --->" + req.url);
@@ -24,7 +25,7 @@ app.get('/', function (req, res, next){
     next();
 });
 
-
+//All the routes on the navbar
 app.get('/', function(req, res){
     res.render('index');
 });
@@ -46,6 +47,7 @@ app.get('/login', function(req, res){
         res.render('login');
 });
 
+//Handles the login button
 app.post('/login', urlencodeParser, function(req, res){
         if(!req.body) res.send(404);
         if(req.body.username == 'Joe'){
@@ -63,5 +65,5 @@ app.get('/signup', function(req, res){
 
 //Start the app
 app.listen(app.get('port'), function(){
-    console.log('App is running on port ' + app.get('port'));
+    console.log('Ninja app is running on port ' + app.get('port'));
 });

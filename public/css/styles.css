@@ -1,0 +1,70 @@
+/* CSS RESETS*/
+*{
+    box-sizing: border-box;
+}
+/* NAVIGATION STYLES */
+.navbar{
+    border-radius:0;
+    margin-bottom:0;
+}
+.navbar-inverse{
+    background-color: #2aabd2;
+    border:none;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color:#520b7b;
+}
+.cpanel{
+    font-size:20px;
+}
+
+/* END OF NAVIGATION STYLES */
+
+/* SIDEBAR */
+.sidebar{
+    background-color: rgba(79, 42, 137, 0.91);
+    border-right:1px solid #000000;
+    padding:0;
+    overflow-y: auto;
+}
+.logo{
+    background-color: rgba(130, 130, 130, 0.55);
+    text-align: center;
+    padding:15px;
+}
+.logo span{
+    font-size: 70px;
+    color: #00fefe;
+}
+.sidebar-links{
+    margin:0;
+    padding:0;
+    border-top:1px solid black;
+}
+.sidebar-links li{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.sidebar-links li a{
+    margin:0;
+    padding:5px 8px 5px 20px;
+    text-decoration:none;
+    font-size:17px;
+    display:block;
+    border-bottom:1px dotted black;
+    padding-right:30px;
+}
+.sidebar-links li a:hover{
+    color:black;
+    background-color: #2aabd2;
+}
+/*END OF SIDEBAR*/
+
+/* MAIN*/
+body >.row{
+    margin:0;
+}
+.main{
+    padding:0;
+}

@@ -1,0 +1,17 @@
+<% include nav.ejs %>
+
+    <div class="col-sm-offset-3 col-sm-5">
+        <ol>
+            <li class="list-group-item"><b>Name</b> <%= data.name %></li>
+            <li class="list-group-item"><b>Age </b><%= data.age %></li>
+            <li class="list-group-item"><b>Hobbies</b>:
+                <ol>
+                    <% data.hobby.forEach(function(item){%>
+                        <li class="list-group-item"><%= item %></li>
+                    <% }); %>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+<% include footer.ejs %>

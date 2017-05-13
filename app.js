@@ -66,4 +66,5 @@ app.get('/signup', function(req, res){
 //Start the app
 app.listen(app.get('port'), function(){
     console.log('Ninja app is running on port ' + app.get('port'));
+    console.log("App developed by Master Joe.");
 });
